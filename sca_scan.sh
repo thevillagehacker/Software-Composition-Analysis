@@ -105,7 +105,7 @@ echo "[+] Snyk setup started..."
 cd ~/SCA
 wget -q --show-progress https://static.snyk.io/cli/latest/snyk-linux
 chmod +x snyk-linux
-sudo mv snyk-linux /usr/local/bin/
+sudo mv snyk-linux /usr/local/bin/snyk
 
 # Snyk configure
 
