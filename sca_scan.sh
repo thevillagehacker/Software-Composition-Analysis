@@ -12,7 +12,7 @@ sudo rm -r *
 
 # OWASP Dependency Check installation
 
-function ODCi {
+function owasp_dependency_check_setup {
 
     echo "[*] Setting up OWASP Dependency check..."
     # Define the file and folder names
@@ -119,6 +119,10 @@ fi
 
 # Run snyk
 
+# folder name and file name
+folder_name="node_modules"
+lock_file="package-lock.json"
+
 # Check if the folder exists
 if [ -d "$folder_name" ]; then
     cd "$folder_name"
@@ -144,7 +148,7 @@ fi
 }
 
 # Run all
-ODCi
+owasp_dependency_check_setup
 owasp_dependency_check
 npm_audit
 snyk_run
