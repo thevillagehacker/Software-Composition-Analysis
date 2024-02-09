@@ -5,7 +5,18 @@ SCA setup and scanning script using OWASP Dependency Checker, NPM Audit and Snyk
 
 ```sh
 chmod +x sca_scan.sh
-./sca_scan.sh [output_dir] [target_dir]
+```
+# Run
+
+```sh
+--------------------------------------
+Select an option:
+1. OWASP Dependency Check Setup
+2. OWASP Dependency Check
+3. NPM Audit
+4. Snyk Run
+5. Exit
+--------------------------------------
 ```
 
 > To use other options please run the `/SCA/dependency-check/bin/dependency-check.sh` script manually.
