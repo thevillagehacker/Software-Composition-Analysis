@@ -7,6 +7,7 @@ cd ~/SCA || exit
 
 # Function for OWASP Dependency Check setup
 owasp_dependency_check_setup() {
+    echo ""
     echo -e "\e[94m[*]\e[0m Setting up OWASP Dependency check..."
     # Define the file and folder names
     file_name="dependency-check-9.0.9-release.zip"
@@ -21,7 +22,7 @@ owasp_dependency_check_setup() {
         wget -q --show-progress "https://github.com/jeremylong/DependencyCheck/releases/download/v9.0.9/dependency-check-9.0.9-release.zip"
         if [ -e "$file_name" ]; then
             echo -e "\e[94m[*]\e[0m Unzipping OWASP Dependency check..."
-            unzip -q "$file_name" && echo -e "\e[92m[+]\e[0m [+] Done.
+            unzip -q "$file_name" && echo -e "\e[92m[+]\e[0m [+] Done."
         else
             echo -e "\e[91m[-]\e[0m Error: $file_name not found."
         fi
@@ -150,7 +151,7 @@ main() {
         1) owasp_dependency_check_setup ;;
         2) read -rp "Enter output path: " output
            read -rp "Enter directory to scan: " dir
-           owasp_dependency_check "$output" "$dir" ;; && echo ""
+           owasp_dependency_check "$output" "$dir" ;;
         3) read -rp "Enter directory to audit: " dir
            npm_audit "$dir" ;;
         4) read -rp "Enter directory to scan: " dir
