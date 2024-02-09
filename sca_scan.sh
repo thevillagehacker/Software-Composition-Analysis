@@ -7,7 +7,6 @@ cd ~/SCA || exit
 
 # Function for OWASP Dependency Check setup
 owasp_dependency_check_setup() {
-    echo ""
     echo -e "\e[94m[*]\e[0m Setting up OWASP Dependency check..."
     # Define the file and folder names
     file_name="dependency-check-9.0.9-release.zip"
