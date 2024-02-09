@@ -9,6 +9,7 @@ chmod +x sca_scan.sh
 # Run
 
 ```sh
+naveenj@HACKERSPACE:[03:23]~$ ./sca_sca.sh
 --------------------------------------
 Select an option:
 1. OWASP Dependency Check Setup
