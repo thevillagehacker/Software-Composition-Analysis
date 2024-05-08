@@ -21,9 +21,9 @@ Select an option:
 ```
 
 * Choose 1 to setup the tool OWASP dependency checker
-* Choose to run the OWASP dependency checker tool
-* Choose to run NOM audit tool
-* Choose to run snyk scan
+* Choose 2 to run the OWASP dependency checker tool
+* Choose 3 to run NOM audit tool
+* Choose 4 to run snyk scan
 
 > To use other options please run the `/SCA/dependency-check/bin/dependency-check.sh` script manually.
 > Same applies to npm audit and snyk test.
