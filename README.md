@@ -8,7 +8,7 @@ chmod +x sca_scan.sh
 ```
 # Run
 
-```bash
+```console
 naveenj@HACKERSPACE:[00:00]~$ ./sca_sca.sh
 --------------------------------------
 Select an option:
